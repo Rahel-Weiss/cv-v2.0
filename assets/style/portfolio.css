@@ -1,0 +1,22 @@
+@import "variables.css";
+
+.div-section-portfolio {
+  background-color: #fff;
+}
+
+.div-Portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.video {
+  outline: none;
+  outline-offset: -5px;
+  max-width: 100%;
+}
+
+.div-Portfolio__tagline {
+  margin-top: 20px;
+}

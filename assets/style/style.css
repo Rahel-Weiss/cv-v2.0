@@ -1,0 +1,86 @@
+@import "intro.css";
+@import "section.css";
+@import "portfolio.css";
+@import "typography.css";
+@import "variables.css";
+@import "footer.css";
+@import "balloons.css";
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+a:hover,
+a:active {
+  color: $orange;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  margin: 0 auto;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+// nav after scroll classes
+
+.clear {
+  opacity: 0;
+}
+
+.sticky > .name-div > .name-circle:first-child {
+  animation: changeColorToGrey 500ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+.sticky > .name-div > .name-circle:last-child {
+  animation: changeColorToGrey 500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.sticky > .arrow-box > .contact-circle {
+  animation-delay: 0003ms;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section-One */
+
+.div-section-one {
+  background-color: $light-grey;
+  align-items: center;
+  color: $dark-grey;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100vh;
+}
+
+.div-section-one > div {
+  padding-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .body {
+    font-size: 0.5rem;
+  }
+
+  .div-intro {
+    background-color: $orange;
+  }
+
+  .col-right,
+  .col-left,
+  .col-middle {
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+  }
+}

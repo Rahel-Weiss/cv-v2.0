@@ -1,0 +1,21 @@
+@import "variables.css";
+
+.section.footer {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.footer__ul {
+  text-align: center;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer__ul {
+    text-align: left;
+  }
+  .section.footer {
+    justify-content: start;
+    padding-left: 25%;
+  }
+}

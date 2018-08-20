@@ -1,0 +1,248 @@
+@import "variables.css";
+
+.div-section-intro {
+  background-color: #4e4e4e;
+  color: #4e4e4e;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.div-section-intro p {
+  font-size: 0.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.div-section-intro h1 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section.div-section-intro {
+  justify-content: start;
+  padding-top: 0;
+}
+
+.background-square {
+  background-color: #f3f2ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  animation: drawer 1s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+}
+
+.name-and-arrow {
+  width: 100vw;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 7.5%;
+  max-width: 800px;
+  background-color: transparent;
+}
+
+.name-div {
+  display: flex;
+  justify-content: start;
+}
+
+.name-circle {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  opacity: 0;
+  animation: grow, fade 500ms, changeColorToGrey 500ms;
+  animation-timing-function: linear, linear;
+  animation-delay: 1s, 1500ms, 2500ms;
+  animation-fill-mode: forwards;
+  background-color: transparent;
+}
+
+.name-circle:after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.name-circle:first-child {
+  color: var(--cream);
+  animation: changeColorToGrey 500ms;
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* .name-circle:last-child h1 {
+  color: var(--dark-gray);
+} */
+
+.name {
+  display: inline;
+}
+
+.arrow-box {
+  z-index: 1;
+  display: flex;
+  display: block;
+  padding-bottom: 0%;
+  /* align-items: center; */
+  position: absolute;
+  right: 0;
+}
+
+.arrow {
+  animation: visable 2500ms infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 3500ms;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.point {
+  height: 5vh;
+  width: 5vh;
+  border-left: 1px solid var(--mid-gray);
+  border-bottom: 1px solid var(--mid-gray);
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+.contact-circle {
+  z-index: 1;
+  background-color: var(--orange);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  opacity: 0;
+  animation: visable 1ms;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+// Animation
+
+@keyframes changeColorToCream {
+  0% {
+    color: var(--beige);
+  }
+
+  100% {
+    color: var(--beige);
+  }
+}
+
+@keyframes visable {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  0% {
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    background: transparent;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+    opacity: 1;
+    color: var(--beige);
+    background-color: var(--dark-gray);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes drawer {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+
+@keyframes changeColorToGrey {
+  0% {
+    height: 100px;
+    width: 100px;
+    color: var(--beige);
+    opacity: 0;
+  }
+
+  100% {
+    height: 100px;
+    width: 100px;
+    color: var(--dark-gray);
+    opacity: 1;
+    background: transparent;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .name-and-arrow {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sticky {
+    grid-template-columns: 1px 1fr;
+    position: unset;
+  }
+
+  .section {
+    padding-top: 60px;
+  }
+
+  .arrow-box {
+    position: relative;
+  }
+
+  .name-div {
+    justify-content: center;
+  }
+}

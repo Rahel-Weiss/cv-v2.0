@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "AvenirNext_Regular";
+  src: url("../fonts/AvenirNextLTPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/AvenirNextLTPro-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/AvenirNextLTPro-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "AvenirNext_Bold";
+  src: url("../fonts/AvenirNextLTPro-Demi.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Demi.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Demi.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/AvenirNextLTPro-Demi.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/AvenirNextLTPro-Demi.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+}
+
+.body {
+  font-size: 56px;
+}
+
+p {
+  font-family: "Adobe Garamond Pro", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  color: var(--dark-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "AvenirNext_Regular", "helvetica", sans-serif;
+  font-weight: normal;
+  color: var(--dark-gray);
+}
+
+h5 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: "AvenirNext_Bold", "helvetica", sans-serif;
+  color: var(--dar-gray);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+a.link-small {
+  letter-spacing: 0.2em;
+  color: var(--light-gray);
+  font-size: 0.1em;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-family: "AvenirNextBold", "helvetica", sans-serif;
+}
+
+.body {
+  background-color: #f3f2ef;
+  line-height: 2rem;
+}

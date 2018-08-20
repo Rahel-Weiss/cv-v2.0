@@ -1,0 +1,97 @@
+@import "variables.css";
+
+.circle {
+  background-color: var(--black);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  position: absolute;
+  transform: scale(0.75);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.balloon-heading {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+#art-direction {
+  top: 35%;
+  right: 12%;
+  opacity: 0.5;
+  height: 200px;
+  width: 200px;
+}
+
+#photoshoot-production {
+  top: 20%;
+  right: 0%;
+  opacity: 0.25;
+  height: 150px;
+  width: 150px;
+}
+
+#code {
+  top: 30%;
+  right: 75%;
+  opacity: 0.9;
+  height: 75px;
+  width: 75px;
+  background-color: var(--orange);
+}
+
+#retouching {
+  top: 17%;
+  right: 25%;
+  opacity: 0.2;
+  height: 120px;
+  width: 120px;
+}
+
+#photography {
+  top: 40%;
+  right: 37.5%;
+  opacity: 0.2;
+  height: 330px;
+  width: 330px;
+}
+
+#ux {
+  top: 55%;
+  right: 2%;
+  opacity: 0.3;
+  height: 55px;
+  width: 55px;
+}
+
+.balloons {
+  height: 80vh;
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 80px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+
+.balloon-animate .circle {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+.circle {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
+}
