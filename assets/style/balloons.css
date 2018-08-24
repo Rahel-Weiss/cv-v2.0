@@ -1,5 +1,26 @@
 @import "variables.css";
 
+.section-four {
+  align-items: flex-start;
+}
+
+.balloons {
+  height: 80vh;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  margin: 0 auto;
+}
+
+.balloon-animate .section-wrapper .circle {
+  transform: scale(1);
+  transform-origin: center;
+}
+
 .circle {
   background-color: var(--black);
   border-radius: 100%;
@@ -19,7 +40,7 @@
 .balloon-heading {
   position: absolute;
   left: 5%;
-  top: 10%;
+  top: 5%;
 }
 
 #art-direction {
@@ -69,23 +90,6 @@
   opacity: 0.3;
   height: 55px;
   width: 55px;
-}
-
-.balloons {
-  height: 80vh;
-  width: 80vw;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 80px;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  display: -webkit-box;
-}
-
-.balloon-animate .circle {
-  transform: scale(1);
-  transform-origin: center;
 }
 
 .circle {

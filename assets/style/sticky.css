@@ -1,0 +1,44 @@
+/* nav after scroll classes */
+
+#nav.sticky {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 16%;
+  padding-right: 19%;
+  transition: background-color 001ms linear;
+  animation-delay: 0;
+}
+
+.sticky-start .background-square {
+  animation: none;
+}
+
+.clear {
+  opacity: 0;
+}
+
+.sticky > .name-div > .name-circle:first-child {
+  animation: changeColorToGrey 500ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+.sticky > .name-div > .name-circle:last-child {
+  animation: changeColorToGrey 500ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+.sticky > .arrow-box > .contact-circle {
+  animation-delay: 0003ms;
+}
+
+#nav.light {
+  background-color: var(--white);
+}
+
+#nav.dark {
+  background-color: var(--light-gray);
+}
