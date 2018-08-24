@@ -1,7 +1,6 @@
 /* Section-One */
 
 #section-one {
-  background-color: var(--light-grey);
   /* align-items: center; */
   color: $dark-grey;
 }

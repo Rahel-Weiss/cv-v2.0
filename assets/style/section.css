@@ -1,25 +1,31 @@
 @import "variables.css";
 
+html {
+  background-color: var(--dark-gray);
+}
+
 body {
   margin: 0;
   width: 100vw;
   overflow: hidden;
-  background-color: var(--white);
+  background-color: var(--dark-gray);
 }
 
 .section {
-  /* align-items: center; */
   justify-content: center;
   display: flex;
   padding-top: 80px;
   width: 100vw;
   margin: 0 auto;
+  background-color: var(--white);
 }
 
 .section-wrapper {
   max-width: 800px;
   width: 80%;
   margin: 0 auto;
+
+  background-color: transparent;
 }
 
 .section-one .history {

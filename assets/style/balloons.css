@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-.balloon-animate .section-wrapper .circle {
+.balloon-animate .circle {
   transform: scale(1);
   transform-origin: center;
 }

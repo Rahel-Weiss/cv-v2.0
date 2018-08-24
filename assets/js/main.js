@@ -45,7 +45,7 @@ function navBackground() {
 
 const header = document.getElementById("nav");
 const arrow = document.getElementById("arrow");
-const balloons = document.getElementById("section-four");
+const balloons = document.getElementById("balloons");
 const start = document.getElementById("start");
 
 const stickyOffSet = header.offsetTop;

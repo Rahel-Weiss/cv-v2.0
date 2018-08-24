@@ -11,6 +11,7 @@
   text-transform: uppercase;
   justify-content: start;
   align-items: center;
+  background-color: var(--dark-gray);
 }
 
 .nav-wrapper {
@@ -19,6 +20,7 @@
   width: 80%;
   max-width: 800px;
   min-height: 100px;
+  background: transparent;
 }
 
 .div-section-intro p {
@@ -36,7 +38,7 @@
 }
 
 .background-square {
-  background-color: #f3f2ef;
+  background-color: var(--light-gray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,32 +77,36 @@
   height: 100px;
   overflow: hidden;
   opacity: 0;
-  animation: grow, fade 500ms, changeColorToGrey 500ms;
-  animation-timing-function: linear, linear;
-  animation-delay: 1s, 1500ms, 2500ms;
-  animation-fill-mode: forwards;
-  background-color: transparent;
 }
 
-/*animation: grow, fade 500ms, changeColorToGrey 500ms; */
-/* /* animation-timing-function: linear, linear; */
-/* animation-delay: 1s, 1500ms, 2500ms; */
+/* for consecutive intro animations */
+.name-circle__consecutive_animate {
+  animation: changeColorToLight 001ms;
+  animation-delay: 4s;
+}
+
+/* animation: grow 1s, fade 500ms, changeColorToGrey 500ms;
+animation-timing-function: linear, linear;
+animation-delay: 2s, 1500ms, 2500ms; */
 
 .name-circle:after {
   content: "";
   padding-bottom: 100%;
   display: block;
+  background-color: red;
 }
 .name-circle:first-child {
   animation: changeColorToGrey 500ms;
-  animation-delay: 2000ms;
+  animation-delay: 3000ms;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
 .name-circle:last-child {
-  background-color: var(--dark-gray);
-  color: var(--light-gray);
+  animation: grow 0s, fade 500ms, changeColorToGrey 500ms;
+  animation-timing-function: linear, linear;
+  animation-delay: 2s, 2500ms, 3500ms;
+  animation-fill-mode: forwards;
 }
 
 h1.name {
@@ -119,7 +125,7 @@ h1.name {
 .arrow {
   animation: visable 2500ms infinite;
   animation-fill-mode: forwards;
-  animation-delay: 3500ms;
+  animation-delay: 4s;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -151,7 +157,7 @@ h1.name {
   opacity: 0;
   animation: visable 1ms;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 4s;
   /* margin: 0 auto; */
   margin-top: 25px;
   margin-bottom: 150px;
@@ -161,15 +167,15 @@ h1.name {
 
 /* Animation */
 
-/* @keyframes changeColorToCream {
+@keyframes changeColorToLight {
   0% {
-    color: var(--beige);
+    color: var(--dark-gray);
   }
 
   100% {
-    color: var(--beige);
+    color: var(--light-gray);
   }
-} */
+}
 
 @keyframes visable {
   0% {
@@ -217,7 +223,7 @@ h1.name {
   0% {
     height: 100px;
     width: 100px;
-    color: var(--beige);
+    color: var(--light-gray);
     opacity: 0;
   }
 
@@ -226,7 +232,7 @@ h1.name {
     width: 100px;
     color: var(--dark-gray);
     opacity: 1;
-    background: transparent;
+    background-color: transparent;
   }
 }
 
@@ -254,7 +260,4 @@ h1.name {
     margin: 0 auto;
     padding: 0;
   }
-}
-
-@media only screen and (max-width: 900px) {
 }
