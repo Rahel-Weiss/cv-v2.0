@@ -22,10 +22,6 @@
       format("truetype"); /* Safari, Android, iOS */
 }
 
-.body {
-  font-size: 56px;
-}
-
 p {
   font-family: "Adobe Garamond Pro", "Times New Roman", serif;
   font-style: italic;

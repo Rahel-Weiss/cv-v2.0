@@ -51,6 +51,8 @@ const arrow = document.getElementById("arrow");
 const balloons = document.getElementById("balloons");
 const start = document.getElementById("start");
 const backgroundSquare = document.getElementById("background-square");
+const nameCircles = document.getElementsByClassName("name-circle");
+const contactCircle = document.getElementsByClassName("contact-circle")[0];
 
 const stickyOffSet = header.offsetTop;
 const balloonOffset = balloons.offsetTop;
@@ -60,10 +62,13 @@ function stickyNav() {
     header.classList.add("sticky");
     arrow.classList.add("clear");
     backgroundSquare.classList.add("sticky-background");
+    for (var i = 0; i < nameCircles.length; i++) {
+      nameCircles[i].classList.add("animation-2");
+    }
+    contactCircle.classList.add("animation-2");
   } else {
     header.classList.remove("sticky");
     arrow.classList.remove("clear");
-    start.classList.add("sticky-start");
   }
 }
 

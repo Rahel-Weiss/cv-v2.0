@@ -45,6 +45,14 @@
   background-color: var(--light-gray);
 }
 
-.sticky-start .name-circle:last-child,
-.sticky-start .name-circle:first-child {
+.animation-2.name-circle:first-child,
+.animation-2.name-circle:last-child {
+  animation: changeToGray 1ms;
+  opacity: 1;
+  animation-delay: 0ms;
+  color: var(--dark-gray);
+}
+
+.animation-2.contact-circle {
+  animation-delay: 500ms;
 }
