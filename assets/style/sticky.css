@@ -8,9 +8,9 @@
   width: 80%;
   padding-left: 16%;
   padding-right: 19%;
-  transition: background-color 500ms linear;
+  transition: background-color 100ms linear;
   animation-delay: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: transparent;
 }
 
@@ -23,13 +23,13 @@
 }
 
 .sticky .name-circle:first-child {
-  animation: changeColorToGrey 500ms;
+  animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards;
 }
 .sticky .name-circle:last-child {
-  animation: changeColorToGrey 500ms;
-  animation-delay: 500ms;
+  animation: changeColorToGrey 1ms;
+  animation-delay: 0ms;
   animation-fill-mode: forwards;
 }
 
@@ -43,4 +43,8 @@
 
 #nav.dark {
   background-color: var(--light-gray);
+}
+
+.sticky-start .name-circle:last-child,
+.sticky-start .name-circle:first-child {
 }

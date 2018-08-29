@@ -48,11 +48,14 @@
 .balloon-heading {
   margin-top: 50px;
 }
+.circle p {
+  opacity: 1;
+}
 
 #art-direction {
   top: 35%;
   right: 15%;
-  opacity: 0.5;
+  opacity: 0.2;
   height: 200px;
   width: 200px;
 }
@@ -85,7 +88,7 @@
 #photography {
   top: 35%;
   right: 45%;
-  opacity: 0.2;
+  opacity: 0.5;
   height: 330px;
   width: 330px;
 }
@@ -117,5 +120,10 @@
 
   #code {
     right: 70%;
+    top: 15%;
+  }
+  .balloon-heading {
+    margin-top: 35px;
+    margin-bottom: 10px;
   }
 }
