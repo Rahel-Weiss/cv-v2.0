@@ -5,12 +5,13 @@
   top: 0;
   height: 80px;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   padding-left: 16%;
   padding-right: 19%;
-  transition: background-color 001ms linear;
+  transition: background-color 500ms linear;
   animation-delay: 0;
   z-index: 1;
+  background-color: transparent;
 }
 
 #background-square.sticky-background {
