@@ -31,7 +31,7 @@ p {
   font-style: italic;
   font-size: 0.9em;
   letter-spacing: 0.5px;
-  color: var(--dark-gray);
+  /* color: var(--dark-gray); */
 }
 
 h1,

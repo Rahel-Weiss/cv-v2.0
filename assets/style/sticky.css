@@ -10,9 +10,10 @@
   padding-right: 19%;
   transition: background-color 001ms linear;
   animation-delay: 0;
+  z-index: 1;
 }
 
-.sticky-start .background-square {
+#background-square.sticky-background {
   animation: none;
 }
 
@@ -20,12 +21,12 @@
   opacity: 0;
 }
 
-.sticky > .name-div > .name-circle:first-child {
+.sticky .name-circle:first-child {
   animation: changeColorToGrey 500ms;
-  animation-delay: 0;
+  animation-delay: 0ms;
   animation-fill-mode: forwards;
 }
-.sticky > .name-div > .name-circle:last-child {
+.sticky .name-circle:last-child {
   animation: changeColorToGrey 500ms;
   animation-delay: 500ms;
   animation-fill-mode: forwards;

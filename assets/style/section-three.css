@@ -3,4 +3,6 @@
   padding-right: 10%;
   margin: 0 auto;
   display: none;
+  background-color: red;
+  height: 100vh;
 }

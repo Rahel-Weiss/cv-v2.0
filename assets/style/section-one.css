@@ -1,8 +1,8 @@
 /* Section-One */
 
 #section-one {
-  /* align-items: center; */
-  color: $dark-grey;
+  align-items: center;
+  color: var(--dark-gray);
 }
 
 #one .grid {

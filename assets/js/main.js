@@ -16,6 +16,9 @@ scrollLink.click(function(e) {
   );
 });
 
+// Scroll Reveal
+ScrollReveal().reveal(".p");
+
 // Sticky Header
 
 window.onscroll = function() {
@@ -47,6 +50,7 @@ const header = document.getElementById("nav");
 const arrow = document.getElementById("arrow");
 const balloons = document.getElementById("balloons");
 const start = document.getElementById("start");
+const backgroundSquare = document.getElementById("background-square");
 
 const stickyOffSet = header.offsetTop;
 const balloonOffset = balloons.offsetTop;
@@ -55,11 +59,11 @@ function stickyNav() {
   if (window.pageYOffset > stickyOffSet) {
     header.classList.add("sticky");
     arrow.classList.add("clear");
-    start.classList.add("sticky-start");
+    backgroundSquare.classList.add("sticky-background");
   } else {
     header.classList.remove("sticky");
     arrow.classList.remove("clear");
-    start.classList.remove("sticky-start");
+    start.classList.add("sticky-start");
   }
 }
 

@@ -1,18 +1,18 @@
 @import "variables.css";
 
 .section-four {
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .balloons {
-  height: 80vh;
+  min-height: 50vh;
   width: 80vw;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-align: center;
+  /* -webkit-box-align: center;
   -webkit-box-pack: center;
-  display: -webkit-box;
+  display: -webkit-box; */
   margin: 0 auto;
 }
 
@@ -33,63 +33,8 @@
   color: white;
   text-align: center;
   font-size: 1em;
-  padding: 20px;
+  padding: 40px;
   overflow: hidden;
-}
-
-.balloon-heading {
-  position: absolute;
-  left: 5%;
-  top: 5%;
-}
-
-#art-direction {
-  top: 35%;
-  right: 12%;
-  opacity: 0.5;
-  height: 200px;
-  width: 200px;
-}
-
-#photoshoot-production {
-  top: 20%;
-  right: 0%;
-  opacity: 0.25;
-  height: 150px;
-  width: 150px;
-}
-
-#code {
-  top: 30%;
-  right: 75%;
-  opacity: 0.9;
-  height: 75px;
-  width: 75px;
-  background-color: var(--orange);
-}
-
-#retouching {
-  top: 17%;
-  right: 25%;
-  opacity: 0.2;
-  height: 120px;
-  width: 120px;
-}
-
-#photography {
-  top: 40%;
-  right: 37.5%;
-  opacity: 0.2;
-  height: 330px;
-  width: 330px;
-}
-
-#ux {
-  top: 55%;
-  right: 2%;
-  opacity: 0.3;
-  height: 55px;
-  width: 55px;
 }
 
 .circle {
@@ -97,5 +42,80 @@
   -moz-transition: all 0.5s linear;
   -o-transition: all 1s linear;
   -ms-transition: all 1s linear;
-  transition: all 1s linear;
+  transition: all 500ms linear;
+}
+
+.balloon-heading {
+  margin-top: 50px;
+}
+
+#art-direction {
+  top: 35%;
+  right: 15%;
+  opacity: 0.5;
+  height: 200px;
+  width: 200px;
+}
+
+#photoshoot-production {
+  top: 18%;
+  right: 2%;
+  opacity: 0.25;
+  height: 150px;
+  width: 150px;
+}
+
+#code {
+  top: 25%;
+  right: 85%;
+  opacity: 0.9;
+  height: 75px;
+  width: 75px;
+  background-color: var(--orange);
+}
+
+#retouching {
+  top: 0%;
+  right: 25%;
+  opacity: 0.2;
+  height: 120px;
+  width: 120px;
+}
+
+#photography {
+  top: 35%;
+  right: 45%;
+  opacity: 0.2;
+  height: 330px;
+  width: 330px;
+}
+
+#ux {
+  top: 60%;
+  right: 2%;
+  opacity: 0.3;
+  height: 55px;
+  width: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+  #photography {
+    right: 20%;
+  }
+
+  #photoshoot-production {
+    right: -20%;
+  }
+
+  .circle {
+    padding: 20px;
+  }
+
+  #ux {
+    right: -15%;
+  }
+
+  #code {
+    right: 70%;
+  }
 }

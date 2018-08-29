@@ -17,10 +17,13 @@
 .nav-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 80%;
   max-width: 800px;
-  min-height: 100px;
+  min-height: 80px;
   background: transparent;
+  padding-top: 80px;
+  margin: 0 auto;
 }
 
 .div-section-intro p {
@@ -93,7 +96,6 @@ animation-delay: 2s, 1500ms, 2500ms; */
   content: "";
   padding-bottom: 100%;
   display: block;
-  background-color: red;
 }
 .name-circle:first-child {
   animation: changeColorToGrey 500ms;
@@ -111,6 +113,8 @@ animation-delay: 2s, 1500ms, 2500ms; */
 
 h1.name {
   display: inline;
+  z-index: 1;
+  color: inherit;
 }
 
 .arrow-box {
@@ -163,6 +167,7 @@ h1.name {
   margin-bottom: 150px;
   position: absolute;
   right: 0;
+  z-index: 2;
 }
 
 /* Animation */
@@ -225,6 +230,7 @@ h1.name {
     width: 100px;
     color: var(--light-gray);
     opacity: 0;
+    background-color: transparent;
   }
 
   100% {
@@ -247,17 +253,32 @@ h1.name {
   .sticky {
     grid-template-columns: 1px 1fr;
     position: unset;
+    animation: none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .sticky .contact-circle {
+    animation: none;
+    opacity: 1;
+    position: unset;
+  }
+
+  .sticky .arrow-box {
+    padding-left: 0;
   }
 
   .arrow-box {
     position: relative;
+    margin: 0 auto;
+    padding-left: 50px;
   }
 
   .name-div {
+    display: flex;
     justify-content: center;
   }
   .name-and-arrow {
     margin: 0 auto;
-    padding: 0;
   }
 }

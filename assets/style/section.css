@@ -7,15 +7,16 @@ html {
 body {
   margin: 0;
   width: 100vw;
-  overflow: hidden;
+
   background-color: var(--dark-gray);
 }
 
 .section {
   justify-content: center;
   display: flex;
-  padding-top: 80px;
+  /* padding-top: 100px; */
   width: 100vw;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: var(--white);
 }
@@ -24,6 +25,7 @@ body {
   max-width: 800px;
   width: 80%;
   margin: 0 auto;
+  margin-top: 60px;
 
   background-color: transparent;
 }
