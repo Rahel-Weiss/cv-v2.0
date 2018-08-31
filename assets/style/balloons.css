@@ -5,15 +5,18 @@
 }
 
 .balloons {
-  min-height: 50vh;
   width: 80vw;
+  height: 80vh;
   max-width: 800px;
-  margin: 0 auto;
-  position: relative;
+  position: absolute;
   /* -webkit-box-align: center;
   -webkit-box-pack: center;
   display: -webkit-box; */
   margin: 0 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
 }
 
 .balloon-animate .circle {
@@ -24,17 +27,21 @@
 .circle {
   background-color: var(--black);
   border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--white);
-  position: absolute;
+  height: 20vw;
+  width: 20vw;
   transform: scale(0.75);
   color: white;
   text-align: center;
   font-size: 1em;
-  padding: 40px;
+  padding: 60px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.3;
+  position: absolute;
+  margin: 0 auto;
 }
 
 .circle {
@@ -45,85 +52,43 @@
   transition: all 500ms linear;
 }
 
-.balloon-heading {
-  margin-top: 50px;
-}
-.circle p {
+.circle > p,
+.circle h5 {
   opacity: 1;
+  color: var(--white);
 }
 
 #art-direction {
+  left: 45%;
   top: 35%;
-  right: 15%;
-  opacity: 0.2;
-  height: 200px;
-  width: 200px;
-}
-
-#photoshoot-production {
-  top: 18%;
-  right: 2%;
-  opacity: 0.25;
-  height: 150px;
-  width: 150px;
 }
 
 #code {
-  top: 25%;
-  right: 85%;
-  opacity: 0.9;
-  height: 75px;
-  width: 75px;
-  background-color: var(--orange);
-}
-
-#retouching {
-  top: 0%;
-  right: 25%;
-  opacity: 0.2;
-  height: 120px;
-  width: 120px;
+  right: 45%;
+  top: 35%;
 }
 
 #photography {
-  top: 35%;
-  right: 45%;
-  opacity: 0.5;
-  height: 330px;
-  width: 330px;
+  top: 5%;
 }
-
-#ux {
-  top: 60%;
-  right: 2%;
-  opacity: 0.3;
-  height: 55px;
-  width: 55px;
+@media only screen and (max-width: 900px) {
+  #photography {
+    top: 10%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  #photography {
-    right: 20%;
-  }
-
-  #photoshoot-production {
-    right: -20%;
-  }
-
   .circle {
-    padding: 20px;
+    padding: 70px;
   }
 
-  #ux {
-    right: -15%;
+  #photography {
+    top: 12.5%;
   }
+}
 
-  #code {
-    right: 70%;
-    top: 15%;
-  }
-  .balloon-heading {
-    margin-top: 35px;
-    margin-bottom: 10px;
+@media only screen and (max-width: 400px) {
+  #photography {
+    top: 2.5%;
   }
 }

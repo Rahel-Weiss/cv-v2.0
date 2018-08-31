@@ -8,3 +8,13 @@
 #one .grid {
   grid-template-columns: 25% 75%;
 }
+
+#section-one .section-wrapper {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  #section-one .section-wrapper {
+    margin-top: 60px;
+  }
+}

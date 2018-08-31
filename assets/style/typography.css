@@ -22,6 +22,10 @@
       format("truetype"); /* Safari, Android, iOS */
 }
 
+.body {
+  line-height: 2rem;
+}
+
 p {
   font-family: "Adobe Garamond Pro", "Times New Roman", serif;
   font-style: italic;
@@ -53,14 +57,19 @@ a {
   font-weight: bold;
 }
 
-.div-section-intro a {
-  font-size: 1em;
-  letter-spacing: 0.2em;
-}
-
 a:hover,
 a:active {
   color: var(--orange);
+}
+
+ul {
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.div-section-intro a {
+  font-size: 1em;
+  letter-spacing: 0.2em;
 }
 
 a.link-small {
@@ -76,8 +85,4 @@ a.link-small {
 .bold {
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   letter-spacing: 0.2rem;
-}
-
-.body {
-  line-height: 2rem;
 }
