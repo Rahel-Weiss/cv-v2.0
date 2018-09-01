@@ -15,17 +15,12 @@
   padding-top: 10%;
 }
 
-.balloon-animate .circle {
-  transform: scale(1);
-  transform-origin: center;
-}
-
 .circle {
   background-color: var(--black);
   border-radius: 100%;
   color: var(--white);
-  height: 20vw;
-  width: 20vw;
+  height: 10vw;
+  width: 10vw;
   transform: scale(0.75);
   color: white;
   text-align: center;
@@ -38,33 +33,66 @@
   opacity: 0.3;
   position: absolute;
   margin: 0 auto;
+  -webkit-transition: transform 1s, width 1s, height 1s; /* Safari */
+  transition: transform 1s, width 1s, height 1s;
+  transform-origin: center;
 }
 
-.circle {
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  transition: all 500ms linear;
+.art-direction {
+  transform: translateX(-40%);
 }
+
+.code {
+  transform: translateX(40%);
+}
+
+.photography {
+  transform: translateY(-75%);
+}
+
+.balloon-animate .circle {
+  height: 50vw;
+  width: 50vw;
+}
+
+// @keyframes balloon-grow {
+//   0% {
+//     color: pink;
+//     transform: scale(0.7);
+//   }
+//   100% {
+//     color: blue;
+//     transform: scale(1);
+//   }
+// }
+
+// #art-direction {
+//   transform: translateX(-40%);
+//   transform: scale(1);
+// }
+
+// #code {
+//   transform: translateX(40%);
+//   transform: scale(1);
+// }
+
+// #photography {
+//   transform: translateY(-75%);
+//   transform: scale(1);
+// }
+
+// .circle {
+//   -webkit-transition: all 0.5s linear;
+//   -moz-transition: all 0.5s linear;
+//   -o-transition: all 1s linear;
+//   -ms-transition: all 1s linear;
+
+// }
 
 .circle > p,
 .circle h5 {
   opacity: 1;
   color: var(--white);
-}
-
-#art-direction {
-  transform: translateX(-40%);
-}
-
-#code {
-  //
-  transform: translateX(40%);
-}
-
-#photography {
-  transform: translateY(-75%);
 }
 
 @media only screen and (max-width: 600px) {
