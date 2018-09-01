@@ -87,15 +87,12 @@
   animation-delay: 4s;
 }
 
-/* animation: grow 1s, fade 500ms, changeColorToGrey 500ms;
-animation-timing-function: linear, linear;
-animation-delay: 2s, 1500ms, 2500ms; */
-
 .name-circle:after {
   content: "";
   padding-bottom: 100%;
   display: block;
 }
+
 .name-circle:first-child {
   animation: changeColorToGrey 500ms;
   animation-delay: 3000ms;
@@ -118,10 +115,8 @@ h1.name {
 
 .arrow-box {
   z-index: 1;
-  /* display: flex; */
   display: block;
   padding-bottom: 0%;
-  /* align-items: center; */
   position: relative;
 }
 
@@ -161,7 +156,6 @@ h1.name {
   animation: visable 1ms;
   animation-fill-mode: forwards;
   animation-delay: 4s;
-  /* margin: 0 auto; */
   margin-top: 25px;
   margin-bottom: 150px;
   position: absolute;
