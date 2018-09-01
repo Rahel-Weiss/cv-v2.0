@@ -4,6 +4,11 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
 const uglifycss = require("gulp-uglifycss");
 const concat = require("gulp-concat");
+const autoprefixer = require("gulp-autoprefixer");
+const runSequence = require("run-sequence");
+const del = require("del");
+
+// Concatinate scss into one css file
 
 gulp.task("sass", function() {
   return gulp
@@ -12,6 +17,29 @@ gulp.task("sass", function() {
     .pipe(concat("styles.css"))
     .pipe(gulp.dest("build/css"));
 });
+
+// Automatically prefix stylesheets
+
+const autoprefixBrowsers = [
+  "ie >= 10",
+  "ie_mob >= 10",
+  "ff >= 30",
+  "chrome >= 34",
+  "safari >= 7",
+  "opera >= 23",
+  "ios >= 7",
+  "android >= 4.4",
+  "bb >= 10"
+];
+
+gulp.task("prefix", function() {
+  return gulp
+    .src("build/css/*.css")
+    .pipe(autoprefixer(autoprefixBrowsers))
+    .pipe(gulp.dest("build"));
+});
+
+// Minify CSS stylesheet
 
 gulp.task("css", function() {
   return gulp
@@ -25,7 +53,8 @@ gulp.task("css", function() {
     .pipe(gulp.dest("build"));
 });
 
-// TO DO: CONCAT js
+// Concatinate Javascript
+
 gulp.task("script", function() {
   return gulp
     .src("assets/js/*.js")
@@ -33,35 +62,30 @@ gulp.task("script", function() {
     .pipe(gulp.dest("build"));
 });
 
-// Compile and automatically prefix stylesheets
-// gulp.task("styles", () => {
-//   const AUTOPREFIXER_BROWSERS = [
-//     "ie >= 10",
-//     "ie_mob >= 10",
-//     "ff >= 30",
-//     "chrome >= 34",
-//     "safari >= 7",
-//     "opera >= 23",
-//     "ios >= 7",
-//     "android >= 4.4",
-//     "bb >= 10"
-//   ];
-// });
-
-gulp.task("style-sheets", gulp.series("sass", "css"));
-
-gulp.task("watch", function() {
-  gulp.watch("assets/scss/*.scss", ["sass"]);
-  gulp.watch("build/*.css", ["css"]);
+// Clean output directory
+gulp.task("clean", function(cb) {
+  del([".tmp", "build/*", "!build/.git"], { dot: true });
+  cb();
 });
 
-const build = gulp.series("style-sheets", "script");
+// All style related tasks
 
-// Run all the tasks
+gulp.task("style-sheets", gulp.series("sass", "prefix", "css"));
+
+// Watch for chanches to folders
+
 gulp.task("default", function() {
   gulp.watch("assets/scss/*.scss", gulp.series("style-sheets"));
   // gulp.watch("build/*.css", gulp.series("css"));
   gulp.watch("assets/js/*.js", gulp.series("script"));
 });
 
-gulp.task("build", build);
+// Run all the tasks for production
+
+const build = gulp.series("style-sheets", "script");
+// gulp.task("build", build);
+const all = gulp.series("clean", "style-sheets", "script");
+
+// Build production files, the default task
+
+gulp.task("build", all);
