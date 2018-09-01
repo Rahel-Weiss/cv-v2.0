@@ -4,12 +4,6 @@ html {
   background-color: var(--dark-gray);
 }
 
-body {
-  margin: 0;
-  width: 100vw;
-  background-color: var(--dark-gray);
-}
-
 .section {
   justify-content: center;
   display: flex;
@@ -78,10 +72,6 @@ ul {
 }
 
 @media (max-width: 600px) {
-  .body {
-    font-size: 0.5rem;
-  }
-
   .col-right,
   .col-left,
   .col-middle {
