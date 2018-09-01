@@ -455,7 +455,8 @@ ul {
   display: block; }
 
 #section-two a {
-  color: var(--dar-gray); }
+  color: var(--dar-gray);
+  font-size: 0.6em; }
 
 .portfolio-video {
   position: relative;
@@ -897,7 +898,7 @@ h1.name {
 
 @media only screen and (min-width: 600px) {
   .html {
-    font-size: 12px; } }
+    font-size: 12px !important; } }
 
 @import url(variables.css);
 #section-two {
@@ -916,7 +917,8 @@ h1.name {
   display: block; }
 
 #section-two a {
-  color: var(--dar-gray); }
+  color: var(--dar-gray);
+  font-size: 0.6em; }
 
 .portfolio-video {
   position: relative;
