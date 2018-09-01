@@ -278,6 +278,9 @@ h1.name {
   .name-div {
     display: flex;
     justify-content: center;
+  }
+
+  .sticky.name-div {
     opacity: 0;
   }
   .name-and-arrow {

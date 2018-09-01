@@ -307,7 +307,8 @@ h1.name {
     padding-left: 50px; }
   .name-div {
     display: flex;
-    justify-content: center;
+    justify-content: center; }
+  .sticky.name-div {
     opacity: 0; }
   .name-and-arrow {
     margin: 0 auto; } }
@@ -868,7 +869,8 @@ h1.name {
     padding-left: 50px; }
   .name-div {
     display: flex;
-    justify-content: center;
+    justify-content: center; }
+  .sticky.name-div {
     opacity: 0; }
   .name-and-arrow {
     margin: 0 auto; } }
