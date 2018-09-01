@@ -1,0 +1,9 @@
+@import url(variables.css);html{background-color:var(--dark-gray)}body{margin:0;width:100vw;background-color:var(--dark-gray)}
+.section{justify-content:center;display:flex;width:100vw;min-height:100vh;margin:0 auto;background-color:var(--white)}
+.section-wrapper{max-width:800px;width:80%;margin:0 auto;margin-top:80px;background-color:transparent}
+.section-one .history{margin-bottom:80px}.grid{margin:0 5%;display:grid;grid-template-columns:25% 50% 25%;grid-template-rows:auto;grid-gap:5px;max-width:800px}
+ul{list-style-type:none}.column-left{text-align:right}.column-middle{padding-left:50px}
+.column-right{padding-left:50px}@media only screen and (max-width:480px){.grid{grid-template-columns:100%}
+.column-left{text-align:left;padding-left:0}.column-middle{padding-left:0}.column-right{padding-left:0}
+}@media(max-width:600px){.body{font-size:.5rem}.col-right,.col-left,.col-middle{text-align:left;padding-left:15px;padding-right:15px;font-size:12px}
+}

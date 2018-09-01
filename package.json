@@ -1,0 +1,39 @@
+{
+  "name": "ux-gulp-theming",
+  "private": true,
+  "version": "1.6.0",
+  "description": "Gulpfile for UX to make theming a lot easier",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "dev": "./node_modules/.bin/gulp dev"
+  },
+  "keywords": [
+    "gulp",
+    "mendix",
+    "theming",
+    "sass"
+  ],
+  "author": "J.W. Lagendijk <jelte.lagendijk@mendix.com>",
+  "repository": "https://github.com/mendix/ux-theming.git",
+  "license": "MIT",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglifycss": "^1.1.0",
+    "pump": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "browser-sync": "^2.24.7",
+    "cssnano": "^4.1.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  }
+}

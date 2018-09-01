@@ -1,0 +1,8 @@
+@font-face{font-family:"AvenirNext_Regular";src:url("../assets/fonts/AvenirNextLTPro-Regular.eot");src:url("../assets/fonts/AvenirNextLTPro-Regular.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),url("../assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype")}
+@font-face{font-family:"AvenirNext_Bold";src:url("../assets/fonts/AvenirNextLTPro-Demi.eot");src:url("../assets/fonts/AvenirNextLTPro-Demi.eot?#iefix") format("embedded-opentype"),url("../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2"),url("../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"),url("../assets/fonts/AvenirNextLTPro-Demi.ttf") format("truetype")}
+.body{line-height:2rem}p{font-family:"Adobe Garamond Pro","Times New Roman",serif;font-style:italic;font-size:.9em;letter-spacing:.5px}
+h1,h2,h3,h4,h5{font-family:"AvenirNext_Regular","helvetica",sans-serif;font-weight:normal;color:var(--dark-gray)}
+h5{font-size:1em}a{text-decoration:none;font-size:.75em;text-transform:uppercase;font-family:"AvenirNext_Bold","helvetica",sans-serif;color:var(--dar-gray);font-weight:bold}
+a:hover,a:active{color:var(--orange)}ul{text-decoration:none;padding-left:0}.div-section-intro a{font-size:1em;letter-spacing:.2em}
+a.link-small{letter-spacing:.2em;color:var(--light-gray);font-size:.4em}.caps{text-transform:uppercase}
+.bold{font-family:"AvenirNext_Bold","helvetica",sans-serif;letter-spacing:.2rem}

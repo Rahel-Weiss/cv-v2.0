@@ -7,7 +7,6 @@ html {
 body {
   margin: 0;
   width: 100vw;
-
   background-color: var(--dark-gray);
 }
 
@@ -67,23 +66,20 @@ ul {
   }
   .column-left {
     text-align: left;
-    padding-left: 25px;
+    padding-left: 0px;
   }
   .column-middle {
-    padding-left: 25px;
+    padding-left: 0px;
   }
+
   .column-right {
-    padding-left: 25px;
+    padding-left: 0px;
   }
 }
 
 @media (max-width: 600px) {
   .body {
     font-size: 0.5rem;
-  }
-
-  .div-intro {
-    background-color: $orange;
   }
 
   .col-right,

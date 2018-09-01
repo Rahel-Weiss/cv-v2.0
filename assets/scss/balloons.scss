@@ -1,17 +1,10 @@
 @import "variables.css";
 
-.section-four {
-  /* align-items: flex-start; */
-}
-
 .balloons {
   width: 80vw;
   height: 80vh;
   max-width: 800px;
   position: absolute;
-  /* -webkit-box-align: center;
-  -webkit-box-pack: center;
-  display: -webkit-box; */
   margin: 0 auto;
   display: inline-flex;
   justify-content: center;
@@ -59,36 +52,24 @@
 }
 
 #art-direction {
-  left: 45%;
-  top: 35%;
+  transform: translateX(-40%);
 }
 
 #code {
-  right: 45%;
-  top: 35%;
+  //
+  transform: translateX(40%);
 }
 
 #photography {
-  top: 5%;
-}
-@media only screen and (max-width: 900px) {
-  #photography {
-    top: 10%;
-  }
+  transform: translateY(-75%);
 }
 
 @media only screen and (max-width: 600px) {
+  .balloons {
+    padding-top: 20vh;
+  }
   .circle {
-    padding: 70px;
-  }
-
-  #photography {
-    top: 12.5%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #photography {
-    top: 2.5%;
+    height: 35vw;
+    width: 35vw;
   }
 }

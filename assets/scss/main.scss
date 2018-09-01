@@ -1,0 +1,16 @@
+@import "sticky.scss";
+@import "section.scss";
+@import "portfolio.scss";
+@import "typography.scss";
+@import "variables.scss";
+@import "footer.scss";
+@import "balloons.scss";
+@import "intro.scss";
+@import "section-one.scss";
+@import "section-three.scss";
+
+@media only screen and (min-width: 600px) {
+  .html {
+    font-size: 12px;
+  }
+}

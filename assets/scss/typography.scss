@@ -1,24 +1,26 @@
 @font-face {
   font-family: "AvenirNext_Regular";
-  src: url("../fonts/AvenirNextLTPro-Regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix")
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/AvenirNextLTPro-Regular.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("../fonts/AvenirNextLTPro-Regular.ttf")
-      format("truetype"); /* Safari, Android, iOS */
+    /* IE6-IE8 */ url("../assets/fonts/AvenirNextLTPro-Regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../assets/fonts/AvenirNextLTPro-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: "AvenirNext_Bold";
-  src: url("../fonts/AvenirNextLTPro-Demi.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/AvenirNextLTPro-Demi.eot?#iefix")
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.eot"); /* IE9 Compat Modes */
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/AvenirNextLTPro-Demi.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/AvenirNextLTPro-Demi.woff")
+    /* IE6-IE8 */ url("../assets/fonts/AvenirNextLTPro-Demi.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../assets/fonts/AvenirNextLTPro-Demi.woff")
       format("woff"),
-    /* Pretty Modern Browsers */ url("../fonts/AvenirNextLTPro-Demi.ttf")
+    /* Pretty Modern Browsers */ url("../assets/fonts/AvenirNextLTPro-Demi.ttf")
       format("truetype"); /* Safari, Android, iOS */
 }
 
