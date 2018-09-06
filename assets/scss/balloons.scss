@@ -12,15 +12,15 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20vw;
+  padding-top: 185px;
 }
 
 .circle {
   background-color: var(--black);
   border-radius: 100%;
   color: var(--white);
-  height: 20vw;
-  width: 20vw;
+  height: 10vw;
+  width: 10vw;
   transform: scale(0.75);
   text-align: center;
   font-size: 1em;
@@ -50,8 +50,8 @@
 }
 
 .balloon-animate .circle {
-  height: 30vw;
-  width: 30vw;
+  height: 20vw;
+  width: 20vw;
   color: var(--white);
 }
 
@@ -63,7 +63,7 @@
 
 @media only screen and (max-width: 600px) {
   .balloons {
-    padding-top: 15vh;
+    padding-top: 150px;
   }
 
   .circle {
@@ -83,7 +83,6 @@
 
   .balloons h5 {
     font-size: 1.2em;
-    font-weight: bold;
     line-height: 1em;
   }
 }

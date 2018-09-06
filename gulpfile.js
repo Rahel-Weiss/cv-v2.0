@@ -43,7 +43,7 @@ gulp.task("prefix", function() {
 
 gulp.task("css", function() {
   return gulp
-    .src("build/css/*.css")
+    .src("build/*.css")
     .pipe(
       uglifycss({
         maxLineLen: 80,

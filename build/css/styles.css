@@ -11,14 +11,14 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20vw; }
+  padding-top: 185px; }
 
 .circle {
   background-color: var(--black);
   border-radius: 100%;
   color: var(--white);
-  height: 20vw;
-  width: 20vw;
+  height: 10vw;
+  width: 10vw;
   transform: scale(0.75);
   text-align: center;
   font-size: 1em;
@@ -45,8 +45,8 @@
   transform: translateY(-75%); }
 
 .balloon-animate .circle {
-  height: 30vw;
-  width: 30vw;
+  height: 20vw;
+  width: 20vw;
   color: var(--white); }
 
 .circle > p,
@@ -56,7 +56,7 @@
 
 @media only screen and (max-width: 600px) {
   .balloons {
-    padding-top: 15vh; }
+    padding-top: 150px; }
   .circle {
     height: 35vw;
     width: 35vw; }
@@ -68,7 +68,6 @@
     line-height: 1em; }
   .balloons h5 {
     font-size: 1.2em;
-    font-weight: bold;
     line-height: 1em; } }
 
 @import url(variables.css);
@@ -145,7 +144,8 @@
   position: relative;
   background-color: transparent;
   width: 100vh;
-  max-width: 800px; }
+  max-width: 800px;
+  z-index: 2; }
 
 .name-div {
   display: flex;
@@ -186,11 +186,9 @@
 
 h1.name {
   display: inline;
-  z-index: 1;
   color: inherit; }
 
 .arrow-box {
-  z-index: 1;
   display: block;
   padding-bottom: 0%;
   position: relative; }
@@ -216,7 +214,6 @@ h1.name {
   margin: 0 auto; }
 
 .contact-circle {
-  z-index: 1;
   background-color: var(--orange);
   height: 50px;
   width: 50px;
@@ -232,8 +229,7 @@ h1.name {
   margin-top: 25px;
   margin-bottom: 150px;
   position: absolute;
-  right: 0;
-  z-index: 2; }
+  right: 0; }
 
 /* Animation */
 @keyframes changeColorToLight {
@@ -317,6 +313,11 @@ h1.name {
   .name-and-arrow {
     margin: 0 auto; } }
 
+@import url(variables.css);
+@import url(variables.css);
+@import url(variables.css);
+@import url(variables.css);
+@import url(variables.css);
 @import url(variables.css);
 @import url(variables.css);
 @import url(variables.css);
@@ -418,7 +419,6 @@ a.link-small {
   padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
-  z-index: 3;
   background-color: transparent; }
 
 #background-square.sticky-background {
@@ -609,14 +609,14 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20vw; }
+  padding-top: 185px; }
 
 .circle {
   background-color: var(--black);
   border-radius: 100%;
   color: var(--white);
-  height: 20vw;
-  width: 20vw;
+  height: 10vw;
+  width: 10vw;
   transform: scale(0.75);
   text-align: center;
   font-size: 1em;
@@ -643,8 +643,8 @@ ul {
   transform: translateY(-75%); }
 
 .balloon-animate .circle {
-  height: 30vw;
-  width: 30vw;
+  height: 20vw;
+  width: 20vw;
   color: var(--white); }
 
 .circle > p,
@@ -654,7 +654,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
   .balloons {
-    padding-top: 15vh; }
+    padding-top: 150px; }
   .circle {
     height: 35vw;
     width: 35vw; }
@@ -666,7 +666,6 @@ ul {
     line-height: 1em; }
   .balloons h5 {
     font-size: 1.2em;
-    font-weight: bold;
     line-height: 1em; } }
 
 .section.div-section-intro {
@@ -725,7 +724,8 @@ ul {
   position: relative;
   background-color: transparent;
   width: 100vh;
-  max-width: 800px; }
+  max-width: 800px;
+  z-index: 2; }
 
 .name-div {
   display: flex;
@@ -766,11 +766,9 @@ ul {
 
 h1.name {
   display: inline;
-  z-index: 1;
   color: inherit; }
 
 .arrow-box {
-  z-index: 1;
   display: block;
   padding-bottom: 0%;
   position: relative; }
@@ -796,7 +794,6 @@ h1.name {
   margin: 0 auto; }
 
 .contact-circle {
-  z-index: 1;
   background-color: var(--orange);
   height: 50px;
   width: 50px;
@@ -812,8 +809,7 @@ h1.name {
   margin-top: 25px;
   margin-bottom: 150px;
   position: absolute;
-  right: 0;
-  z-index: 2; }
+  right: 0; }
 
 /* Animation */
 @keyframes changeColorToLight {
@@ -910,7 +906,6 @@ h1.name {
   padding-right: 10%;
   margin: 0 auto;
   display: none;
-  background-color: red;
   height: 100vh; }
 
 @import url(variables.css);
@@ -960,6 +955,7 @@ h1.name {
   .portfolio-video {
     width: 100%; } }
 
+@import url(variables.css);
 /* Section-One */
 #section-one {
   align-items: center;
@@ -968,12 +964,12 @@ h1.name {
 #one .grid {
   grid-template-columns: 25% 75%; }
 
+@import url(variables.css);
 #section-three {
   padding-left: 10%;
   padding-right: 10%;
   margin: 0 auto;
   display: none;
-  background-color: red;
   height: 100vh; }
 
 @import url(variables.css);
@@ -1047,6 +1043,7 @@ ul {
     padding-right: 15px;
     font-size: 12px; } }
 
+@import url(variables.css);
 :root {
   --light-gray: #f3f2ef;
   --black: #000;
@@ -1067,7 +1064,6 @@ ul {
   padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
-  z-index: 3;
   background-color: transparent; }
 
 #background-square.sticky-background {
@@ -1105,6 +1101,7 @@ ul {
 .animation-2.contact-circle {
   animation-delay: 500ms; }
 
+@import url(variables.css);
 @font-face {
   font-family: "AvenirNext_Regular";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.eot");
@@ -1181,6 +1178,7 @@ a.link-small {
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   letter-spacing: 0.1rem; }
 
+@import url(variables.css);
 :root {
   --light-gray: #f3f2ef;
   --black: #000;

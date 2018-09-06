@@ -32,7 +32,7 @@ var $contentDivs = $(".section");
 var stickyOffset = $(".name-and-arrow").offset();
 
 function navBackground() {
-  $contentDivs.each(function(k) {
+  $contentDivs.each(function() {
     var _thisOffset = $(this).offset();
     var _actPosition = _thisOffset.top - $(window).scrollTop();
     if (
