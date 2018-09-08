@@ -1,15 +1,11 @@
-@import "variables.scss";
-
 /* nav after scroll classes */
 
 #nav.sticky {
   position: fixed;
   top: 0;
-  height: 80px;
   overflow: hidden;
-  width: 80%;
-  padding-left: 16%;
-  padding-right: 19%;
+  // padding-left: 16%;
+  // padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
   background-color: transparent;
@@ -24,6 +20,7 @@
 }
 
 .sticky .name-circle:first-child {
+  margin-left: -20px;
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards;

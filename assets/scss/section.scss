@@ -1,5 +1,3 @@
-@import "variables.css";
-
 html {
   background-color: var(--dark-gray);
 }
@@ -12,6 +10,7 @@ html {
   min-height: 100vh;
   margin: 0 auto;
   background-color: var(--white);
+  z-index: 0;
 }
 
 .section-wrapper {

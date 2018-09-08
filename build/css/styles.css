@@ -1,4 +1,3 @@
-@import url(variables.css);
 .section.section-four {
   overflow-x: hidden; }
 
@@ -70,7 +69,6 @@
     font-size: 1.2em;
     line-height: 1em; } }
 
-@import url(variables.css);
 .section.footer {
   background-color: var(--light-gray);
   color: var(--dark-gray);
@@ -87,7 +85,6 @@
   .section.footer {
     justify-content: start; } }
 
-@import url(variables.css);
 .section.div-section-intro {
   height: 100vh;
   width: 100vw;
@@ -106,8 +103,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 800px;
-  min-height: 80px;
   background: transparent;
   margin: 0 auto; }
 
@@ -143,9 +138,9 @@
   margin: 0;
   position: relative;
   background-color: transparent;
-  width: 100vh;
+  width: 100vw;
   max-width: 800px;
-  z-index: 2; }
+  z-index: 10; }
 
 .name-div {
   display: flex;
@@ -286,15 +281,22 @@ h1.name {
 @media only screen and (min-width: 600px) {
   .name-and-arrow {
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto; } }
+    grid-template-rows: auto;
+    padding: 0 50px; } }
 
 @media only screen and (max-width: 600px) {
-  .sticky {
+  #nav.sticky .name-and-arrow {
     grid-template-columns: 1px 1fr;
     position: unset;
     animation: none;
     padding: 0;
-    justify-content: center; }
+    justify-content: center;
+    height: 80px; }
+  .contact-circle {
+    position: fixed;
+    top: 0;
+    left: 45vw;
+    right: 50vw; }
   .sticky .contact-circle {
     animation: none;
     opacity: 1;
@@ -313,16 +315,15 @@ h1.name {
   .name-and-arrow {
     margin: 0 auto; } }
 
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
-@import url(variables.css);
+:root {
+  --light-gray: #f3f2ef;
+  --black: #000;
+  --white: #fff;
+  --mid-gray: #979797;
+  --orange: #bf6941;
+  --red: #b61b2e;
+  --dark-gray: #4a4a4a; }
+
 @font-face {
   font-family: "AvenirNext_Regular";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.eot");
@@ -399,24 +400,11 @@ a.link-small {
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   letter-spacing: 0.1rem; }
 
-:root {
-  --light-gray: #f3f2ef;
-  --black: #000;
-  --white: #fff;
-  --mid-gray: #979797;
-  --orange: #bf6941;
-  --red: #b61b2e;
-  --dark-gray: #4a4a4a; }
-
 /* nav after scroll classes */
 #nav.sticky {
   position: fixed;
   top: 0;
-  height: 80px;
   overflow: hidden;
-  width: 80%;
-  padding-left: 16%;
-  padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
   background-color: transparent; }
@@ -428,6 +416,7 @@ a.link-small {
   opacity: 0; }
 
 .sticky .name-circle:first-child {
+  margin-left: -20px;
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards; }
@@ -466,7 +455,8 @@ html {
   width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: var(--white); }
+  background-color: var(--white);
+  z-index: 0; }
 
 .section-wrapper {
   max-width: 800px;
@@ -571,15 +561,6 @@ ul {
     padding-top: 0; }
   .portfolio-video {
     width: 100%; } }
-
-:root {
-  --light-gray: #f3f2ef;
-  --black: #000;
-  --white: #fff;
-  --mid-gray: #979797;
-  --orange: #bf6941;
-  --red: #b61b2e;
-  --dark-gray: #4a4a4a; }
 
 .section.footer {
   background-color: var(--light-gray);
@@ -686,8 +667,6 @@ ul {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 800px;
-  min-height: 80px;
   background: transparent;
   margin: 0 auto; }
 
@@ -723,9 +702,9 @@ ul {
   margin: 0;
   position: relative;
   background-color: transparent;
-  width: 100vh;
+  width: 100vw;
   max-width: 800px;
-  z-index: 2; }
+  z-index: 10; }
 
 .name-div {
   display: flex;
@@ -866,15 +845,22 @@ h1.name {
 @media only screen and (min-width: 600px) {
   .name-and-arrow {
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto; } }
+    grid-template-rows: auto;
+    padding: 0 50px; } }
 
 @media only screen and (max-width: 600px) {
-  .sticky {
+  #nav.sticky .name-and-arrow {
     grid-template-columns: 1px 1fr;
     position: unset;
     animation: none;
     padding: 0;
-    justify-content: center; }
+    justify-content: center;
+    height: 80px; }
+  .contact-circle {
+    position: fixed;
+    top: 0;
+    left: 45vw;
+    right: 50vw; }
   .sticky .contact-circle {
     animation: none;
     opacity: 1;
@@ -908,7 +894,6 @@ h1.name {
   display: none;
   height: 100vh; }
 
-@import url(variables.css);
 #section-two {
   display: flex;
   flex-direction: column;
@@ -955,7 +940,6 @@ h1.name {
   .portfolio-video {
     width: 100%; } }
 
-@import url(variables.css);
 /* Section-One */
 #section-one {
   align-items: center;
@@ -964,7 +948,6 @@ h1.name {
 #one .grid {
   grid-template-columns: 25% 75%; }
 
-@import url(variables.css);
 #section-three {
   padding-left: 10%;
   padding-right: 10%;
@@ -972,7 +955,6 @@ h1.name {
   display: none;
   height: 100vh; }
 
-@import url(variables.css);
 html {
   background-color: var(--dark-gray); }
 
@@ -983,7 +965,8 @@ html {
   width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: var(--white); }
+  background-color: var(--white);
+  z-index: 0; }
 
 .section-wrapper {
   max-width: 800px;
@@ -1043,25 +1026,11 @@ ul {
     padding-right: 15px;
     font-size: 12px; } }
 
-@import url(variables.css);
-:root {
-  --light-gray: #f3f2ef;
-  --black: #000;
-  --white: #fff;
-  --mid-gray: #979797;
-  --orange: #bf6941;
-  --red: #b61b2e;
-  --dark-gray: #4a4a4a; }
-
 /* nav after scroll classes */
 #nav.sticky {
   position: fixed;
   top: 0;
-  height: 80px;
   overflow: hidden;
-  width: 80%;
-  padding-left: 16%;
-  padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
   background-color: transparent; }
@@ -1073,6 +1042,7 @@ ul {
   opacity: 0; }
 
 .sticky .name-circle:first-child {
+  margin-left: -20px;
   animation: changeColorToGrey 1ms;
   animation-delay: 0ms;
   animation-fill-mode: forwards; }
@@ -1101,7 +1071,6 @@ ul {
 .animation-2.contact-circle {
   animation-delay: 500ms; }
 
-@import url(variables.css);
 @font-face {
   font-family: "AvenirNext_Regular";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.eot");
@@ -1178,7 +1147,6 @@ a.link-small {
   font-family: "AvenirNext_Bold", "helvetica", sans-serif;
   letter-spacing: 0.1rem; }
 
-@import url(variables.css);
 :root {
   --light-gray: #f3f2ef;
   --black: #000;

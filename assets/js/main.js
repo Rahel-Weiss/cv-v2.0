@@ -4,9 +4,25 @@ $(function() {
     overflowScroll: true
   });
 });
+// Scroll Reveal
+
+window.sr = ScrollReveal();
+sr.reveal(".history-one__h5", { delay: 100 });
+sr.reveal(".history-one__h1", { delay: 700 });
+sr.reveal(".history-one__p", { delay: 5000 });
+
+sr.reveal(".history-two__h5", { delay: 1500 });
+sr.reveal(".history-two__h1", { delay: 2500 });
+sr.reveal(".history-two__p", { delay: 5500 });
+
+sr.reveal(".history-three__h5", { delay: 3000 });
+sr.reveal(".history-three__h1", { delay: 4000 });
+sr.reveal(".history-three__p", { delay: 6000 });
+
+// Smooth scrolling
 
 var scrollLink = $(".scroll");
-// Smooth scrolling
+
 scrollLink.click(function(e) {
   e.preventDefault();
   $("body,html").animate(
@@ -17,9 +33,6 @@ scrollLink.click(function(e) {
   );
 });
 
-// Scroll Reveal
-ScrollReveal().reveal(".p");
-
 // Sticky Header
 
 window.onscroll = function() {
@@ -29,12 +42,12 @@ window.onscroll = function() {
 };
 
 var $contentDivs = $(".section");
-var stickyOffset = $(".name-and-arrow").offset();
+var stickyOffset = $(".nav-wrapper").offset();
 
 function navBackground() {
   $contentDivs.each(function() {
-    var _thisOffset = $(this).offset();
-    var _actPosition = _thisOffset.top - $(window).scrollTop();
+    var _thisOffset_top = $(this).offset().top - 80;
+    var _actPosition = _thisOffset_top - $(window).scrollTop();
     if (
       _actPosition < stickyOffset.top &&
       _actPosition + $(this).height() > 0
