@@ -1,86 +1,186 @@
 .section.section-four {
   overflow-x: hidden;
 }
+
+.skills-text {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+
 .balloons {
   width: 80vw;
-  height: 80vh;
+  height: 50vh;
   max-width: 800px;
   position: absolute;
   margin: 0 auto;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding-top: 185px;
 }
 
 .circle {
   background-color: var(--black);
   border-radius: 100%;
   color: var(--white);
-  height: 10vw;
-  width: 10vw;
-  transform: scale(0.75);
+  height: 200px;
+  width: 200px;
   text-align: center;
-  font-size: 1em;
-  padding: 80px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.3;
+  opacity: 0.5;
   position: absolute;
-  margin: 0 auto;
+  font-size: 0.5em;
   -webkit-transition: transform 1s, width 1s, height 1s, color 1s; /* Safari */
   transition: transform 1s, width 1s, height 1s, color 1s;
   transform-origin: center;
 }
 
+.circle h5 {
+  margin-top: 40%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.circle-text {
+  opacity: 0;
+  padding: 0 10%;
+}
+
+.circle-text ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10%;
+  font-size: 2em;
+  list-style: initial;
+}
+
+.close-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.circle:hover {
+  cursor: pointer;
+}
+
 .art-direction {
-  transform: translateX(-40%);
+  transform: translate(-40%, 35%);
 }
 
 .code {
-  transform: translateX(40%);
+  transform: translate(40%, 35%);
 }
 
 .photography {
-  transform: translateY(-75%);
+  transform: translateY(-35%);
 }
 
-.balloon-animate .circle {
-  height: 20vw;
-  width: 20vw;
-  color: var(--white);
-}
+// On Click
 
-.circle > p,
-.circle h5 {
+$circle-animation-duration: 1s;
+
+.open-circle .circle-text {
+  transform: translate(0);
   opacity: 1;
-  color: var(--white);
 }
+
+.circle.open-circle h5 {
+  margin-top: 0;
+  padding-left: 10%;
+  padding-top: 20px;
+}
+
+.open-circle .close-button {
+  opacity: 1;
+}
+
+.circle.open-circle {
+  animation: open-circle $circle-animation-duration;
+  animation-fill-mode: both;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Animation */
+
+@keyframes open-circle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    width: 100%;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+  75% {
+    height: 100%;
+    width: 100%;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+    border-radius: 0;
+    overflow: scroll;
+  }
+}
+
+// .balloon-animate .circle:hover {
+
+//   color: red;
+// }
+
+// .circle:hover h5 {
+//   opacity: 0;
+// }
+// .art-direction:hover::after {
+//   // background-color: black;
+//   padding: 20%;
+//   // opacity: 1;
+//   line-height: 2em;
+//   font-size: 4px;
+
+//   content: "<li>- Producing small to medium size photoshoots and/or ollaborating with inhouse production companies for larger scale shoots.</li>
+//   - International shoot locations including: London, Paris, Sydney, Saint Lucia, Dubai,
+//   Nova Scotia, New Brunswick, Edinburgh, Bra,Tuscany, Bologna, Bodrum, Malta, Istanbul ,Birmingham, Kuala Lumpur, Koh Phangang, Morocco, Melbourne, LA &
+//   Rio De Janeiro.
+//   ";
+// }
+
+// .code:hover::after {
+//   content: "HTML & CSS - Good Understanding
+//   Ruby on Rails - Learning
+//   Javascript - Learning";
+// }
+
+// .balloon-animate .circle {
+//   height: 200px;
+//   width: 200px;
+//   color: var(--white);
+// }
 
 @media only screen and (max-width: 600px) {
-  .balloons {
-    padding-top: 150px;
-  }
-
-  .circle {
-    height: 35vw;
-    width: 35vw;
-  }
-
   .balloon-animate .circle {
-    height: 50vw;
-    width: 50vw;
+    height: 150px;
+    width: 150px;
+  }
+  .skills-text {
+    padding: 0;
   }
 
-  .balloons p {
-    font-size: 1.2em;
-    line-height: 1em;
-  }
-
-  .balloons h5 {
-    font-size: 1.2em;
-    line-height: 1em;
+  .circle-text ul {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }

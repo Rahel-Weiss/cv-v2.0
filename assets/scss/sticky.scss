@@ -4,15 +4,15 @@
   position: fixed;
   top: 0;
   overflow: hidden;
-  // padding-left: 16%;
-  // padding-right: 19%;
   transition: background-color 100ms linear;
   animation-delay: 0;
   background-color: transparent;
+  z-index: 10;
 }
 
 #background-square.sticky-background {
   animation: none;
+  z-index: 100;
 }
 
 .clear {

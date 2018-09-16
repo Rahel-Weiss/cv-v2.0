@@ -1,16 +1,18 @@
 html {
-  background-color: var(--dark-gray);
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .section {
   justify-content: center;
   display: flex;
-  /* padding-top: 100px; */
-  width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
   background-color: var(--white);
-  z-index: 0;
 }
 
 .section-wrapper {
@@ -19,6 +21,7 @@ html {
   margin: 0 auto;
   margin-top: 60px;
   background-color: transparent;
+  margin-top: 80px;
 }
 
 .section-one .history {
