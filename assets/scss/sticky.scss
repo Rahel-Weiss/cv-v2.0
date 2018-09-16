@@ -6,13 +6,12 @@
   overflow: hidden;
   transition: background-color 100ms linear;
   animation-delay: 0;
-  background-color: transparent;
-  z-index: 10;
+  background-color: red;
 }
 
 #background-square.sticky-background {
   animation: none;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .clear {
