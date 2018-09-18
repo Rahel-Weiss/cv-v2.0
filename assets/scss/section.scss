@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+body.scroll-lock {
+  overflow: hidden;
+}
+
 .section {
   justify-content: center;
   display: flex;
