@@ -33,6 +33,7 @@
   -webkit-transition: transform 1s, width 1s, height 1s, color 1s; /* Safari */
   transition: transform 1s, width 1s, height 1s, color 1s;
   transform-origin: center;
+  overflow: hidden;
 }
 
 .circle h5 {

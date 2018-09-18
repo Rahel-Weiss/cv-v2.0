@@ -1,6 +1,6 @@
 .section.section-four{overflow-x:hidden}.skills-text{text-align:center;margin-top:50px;margin-bottom:50px;padding:0 100px}
 .balloons{width:80vw;height:50vh;max-width:800px;position:absolute;margin:0 auto;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.circle{background-color:var(--black);border-radius:100%;color:var(--white);height:200px;width:200px;text-align:center;opacity:.5;position:absolute;font-size:.5em;transition:width 1s,height 1s,color 1s,-webkit-transform 1s;transition:transform 1s,width 1s,height 1s,color 1s;transition:transform 1s,width 1s,height 1s,color 1s,-webkit-transform 1s;-webkit-transform-origin:center;transform-origin:center}
+.circle{background-color:var(--black);border-radius:100%;color:var(--white);height:200px;width:200px;text-align:center;opacity:.5;position:absolute;font-size:.5em;transition:width 1s,height 1s,color 1s,-webkit-transform 1s;transition:transform 1s,width 1s,height 1s,color 1s;transition:transform 1s,width 1s,height 1s,color 1s,-webkit-transform 1s;-webkit-transform-origin:center;transform-origin:center;overflow:hidden}
 .circle h5{margin-top:40%;font-size:1.2em;text-transform:uppercase;color:var(--white);opacity:.8}
 .circle-text{opacity:0;padding:0 10%}.circle-text ul{display:grid;grid-template-columns:1fr 1fr;grid-column-gap:10%;font-size:2em;list-style:initial}
 .close-button{height:24px;width:24px;position:absolute;top:20px;right:20px;opacity:0}
@@ -90,7 +90,7 @@ ul{list-style-type:none}.column-left{text-align:right}.column-middle{padding-lef
 .section.footer{-webkit-justify-content:start;-ms-flex-pack:start;justify-content:start}
 }.section.section-four{overflow-x:hidden}.skills-text{text-align:center;margin-top:50px;margin-bottom:50px;padding:0 100px}
 .balloons{width:80vw;height:50vh;max-width:800px;position:absolute;margin:0 auto;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.circle{background-color:var(--black);border-radius:100%;color:var(--white);height:200px;width:200px;text-align:center;opacity:.5;position:absolute;font-size:.5em;transition:width 1s,height 1s,color 1s,-webkit-transform 1s;transition:transform 1s,width 1s,height 1s,color 1s;transition:transform 1s,width 1s,height 1s,color 1s,-webkit-transform 1s;-webkit-transform-origin:center;transform-origin:center}
+.circle{background-color:var(--black);border-radius:100%;color:var(--white);height:200px;width:200px;text-align:center;opacity:.5;position:absolute;font-size:.5em;transition:width 1s,height 1s,color 1s,-webkit-transform 1s;transition:transform 1s,width 1s,height 1s,color 1s;transition:transform 1s,width 1s,height 1s,color 1s,-webkit-transform 1s;-webkit-transform-origin:center;transform-origin:center;overflow:hidden}
 .circle h5{margin-top:40%;font-size:1.2em;text-transform:uppercase;color:var(--white);opacity:.8}
 .circle-text{opacity:0;padding:0 10%}.circle-text ul{display:grid;grid-template-columns:1fr 1fr;grid-column-gap:10%;font-size:2em;list-style:initial}
 .close-button{height:24px;width:24px;position:absolute;top:20px;right:20px;opacity:0}
