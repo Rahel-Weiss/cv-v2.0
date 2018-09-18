@@ -66,6 +66,7 @@
 }
 .circle:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .art-direction {
@@ -82,7 +83,7 @@
 
 // On Click
 
-$circle-animation-duration: 1s;
+$circle-animation-duration: 500ms;
 
 .open-circle .circle-text {
   transform: translate(0);
@@ -102,8 +103,8 @@ $circle-animation-duration: 1s;
 .circle.open-circle {
   animation: open-circle $circle-animation-duration;
   animation-fill-mode: both;
-  z-index: 1;
-  text-align: left;
+  z-index: 3;
+  // border-radius: 0;
 }
 
 /* Animation */
@@ -111,28 +112,37 @@ $circle-animation-duration: 1s;
 @keyframes open-circle {
   0% {
     transform: translateX(0);
+    color: transparent;
   }
   25% {
     transform: translateX(0);
+    color: transparent;
   }
   50% {
-    width: 100%;
     transform: translateX(0);
-    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+    color: transparent;
   }
   75% {
-    height: 100%;
-    width: 100%;
     transform: translateX(0);
-    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+    color: transparent;
   }
   100% {
-    height: 100%;
-    width: 100%;
-    opacity: 1;
     transform: translateX(0);
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
     border-radius: 0;
-    overflow: scroll;
+    color: var(--white);
   }
 }
 

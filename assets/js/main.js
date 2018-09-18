@@ -1,9 +1,9 @@
-// $(function() {
-//   $.scrollify({
-//     section: ".section",
-//     overflowScroll: true
-//   });
-// });
+$(function() {
+  $.scrollify({
+    section: ".section",
+    overflowScroll: true
+  });
+});
 
 // Open Circles onClick
 
