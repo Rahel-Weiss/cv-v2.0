@@ -44,7 +44,6 @@
   animation: drawer 1s ease-in-out;
   animation-delay: 1s;
   overflow: hidden;
-  z-index: 1;
   position: absolute;
 }
 
@@ -153,7 +152,6 @@ h1.name {
   margin-bottom: 150px;
   position: absolute;
   right: 0;
-  z-index: 1000;
 }
 
 /* Animation */
