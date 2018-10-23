@@ -27,11 +27,12 @@
   height: 200px;
   width: 200px;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.2;
   position: absolute;
   font-size: 0.5em;
   -webkit-transition: transform 1s, width 1s, height 1s, color 1s; /* Safari */
-  transition: transform 1s, width 1s, height 1s, color 1s;
+  transition: transform 1s, width 1s, height 1s, color 1s,
+    opacity 500ms ease-in-out;
   transform-origin: center;
   overflow: hidden;
 }
@@ -41,7 +42,9 @@
   font-size: 1.2em;
   text-transform: uppercase;
   color: var(--white);
-  opacity: 0.8;
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+  transition-delay: 500ms;
 }
 
 .circle-text {
@@ -70,16 +73,25 @@
   opacity: 0.8;
 }
 
-.art-direction {
+.balloon-animate .art-direction {
   transform: translate(-40%, 35%);
 }
 
-.code {
+.balloon-animate .code {
   transform: translate(40%, 35%);
 }
 
-.photography {
+.balloon-animate .photography {
   transform: translateY(-35%);
+}
+
+// On Scroll
+
+.balloon-animate .circle h5 {
+  opacity: 1;
+}
+.balloon-animate .circle {
+  opacity: 0.5;
 }
 
 // On Click
@@ -105,7 +117,6 @@ $circle-animation-duration: 500ms;
   animation: open-circle $circle-animation-duration;
   animation-fill-mode: both;
   z-index: 3;
-  // border-radius: 0;
 }
 
 /* Animation */
@@ -130,6 +141,7 @@ $circle-animation-duration: 500ms;
     height: 100vh;
     width: 100vw;
     color: transparent;
+    border-radius: 0;
   }
   100% {
     transform: translateX(0);

@@ -247,10 +247,8 @@ h1.name {
   }
 
   .contact-circle {
-    position: fixed;
-    top: 0;
-    left: 45vw;
-    right: 50vw;
+    opacity: 0;
+    animation: 0;
   }
 
   .sticky .contact-circle {
